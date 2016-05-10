@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Site Properties -->
+    <link rel="stylesheet" href="semantic/v2.1.7/semantic.css">
+    <script src="jquery/jquery-1.11.3.js"></script>
+    <script src="semantic/v2.1.7/semantic.js"></script>
+
+    <style type="text/css">
+        body {
+            background-color: #DADADA;
+        }
+        body > .grid {
+            height: 100%;
+        }
+        .column {
+            max-width: 450px;
+        }
+        div.column,div.ui.stacked.segment{
+            height: 100%;
+        }
+    </style>
+    <script>
+        $(document)
+                .ready(function() {
+                    $('.ui.form')
+                            .form({
+                                on: 'blur',
+                                fields: {
+                                    match: {
+                                        identifier  : 'password2',
+                                        rules: [
+                                            {
+                                                type   : 'match[password]',
+                                                prompt : '两次密码不一致!'
+                                            },
+                                            {
+                                                type   : 'empty',
+                                                prompt : '确认密码不能为空!'
+                                            }
+                                        ]
+                                    },
+
+                                    email: {
+                                        identifier: 'email',
+                                        rules: [
+                                            {
+                                                type: 'empty',
+                                                prompt: '邮箱不能为空!'
+                                            },
+                                            {
+                                                type: 'email',
+                                                prompt: '邮箱格式不合法!'
+                                            }
+                                        ]
+                                    },
+                                    password: {
+                                        identifier: 'password',
+                                        rules: [
+                                            {
+                                                type: 'empty',
+                                                prompt: '邮箱不能为空!'
+                                            },
+                                            {
+                                                type: 'length[6]',
+                                                prompt: '密码不能少于六位!'
+                                            }
+                                        ]
+                                    }
+                                }
+                            })
+                    ;
+                })
+
+
+
+    </script>
+</head>
+<body>
+<div class="ui center aligned grid">
+    <div class="column">
+            <div class="ui stacked segment">
+
+                <div class="ui grey four item inverted menu">
+                    <a href="index.html" class="item">
+                        首页
+                    </a>
+                    <a href="jkd.html" class="active item">
+                        寄快递
+                    </a>
+                    <a href="qkd.html" class="item">
+                        取快递
+                    </a>
+                    <a href="about.html" class="item">
+                        关于
+                    </a>
+                </div>
+                <form class="ui form">
+                <img src="kdk.png" class="image" style="width: 100px;border-radius: 50px">
+                <p>快递快,用心服务.</p>
+                <div class="field" style="margin-top: 50px">
+                    <div class="ui left icon input">
+                        <i class="user icon"></i>
+                        <input type="text" name="username" placeholder="寄件人姓名">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="marker icon"></i>
+                        <input type="text" name="address" placeholder="请输入地址详细到宿舍门牌号">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="phone icon"></i>
+                        <input type="text" name="mobile" placeholder="请输入手机号/校园短号">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class=" icon"></i>
+                        <textarea name=""  cols="30" rows="4" placeholder="备注信息"></textarea>
+                    </div>
+                </div>
+
+                <div class="ui error message"></div>
+
+                <div class="ui fluid teal submit button" style="margin-bottom: 10px">立即预约</div>
+
+                <div class="ui icon small message">
+                    <i class="close icon"></i>
+                    <div class="content">
+                        <p>
+                           快递快预约成功后,我么会在第一时间联系您并上门取件
+                        </p>
+                    </div>
+                </div>
+
+        </form>
+            </div>
+
+
+
+        <div class="ui message">
+            已有账号? <a href="">登陆</a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+</html>
