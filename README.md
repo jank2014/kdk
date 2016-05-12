@@ -24,5 +24,6 @@
 ![关于](https://github.com/jank2014/kdk/blob/master/images/about.png?raw=true)
 
 ##特点
+这个项目会开源出来 后台基于jzopen.这样可以为每一个有微信的快递小哥,或者基层的快递店 提供一种便捷的快递收发服务.
 
 
