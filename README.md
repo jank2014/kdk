@@ -7,6 +7,13 @@
 
 
 
+#图太烂 看演示吧 仅限静态前台
+[点击查看KDK静态页面](http://42.96.176.71/kuaidi)
+
+##手机扫面二维码测试
+![二维码](https://github.com/jank2014/kdk/blob/master/images/kdkqr.png?raw=true)
+
+
 ##home预览
 ![首页](https://github.com/jank2014/kdk/blob/master/images/home.png?raw=true)
 ##寄快递预览
